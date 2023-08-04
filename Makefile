@@ -1,7 +1,7 @@
-all: hello
+all: there
 
-hello: hello.o
-	gcc -Wall -std=c99 -o hello hello.o
+there: hello.o
+	gcc -Wall -std=c99 -o there hello.o
 
 hello.o: hello.c
 	gcc -Wall -std=c99 -c hello.c
@@ -9,4 +9,4 @@ hello.o: hello.c
 .PHONY: clean
 
 clean:
-	rm -f hello hello.o
+	rm -f there hello.o
